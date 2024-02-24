@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres
+    container_name: countries-db
+    environment:
+      POSTGRES_USER: countries
+      POSTGRES_PASSWORD: countries
+      POSTGRES_DB: countries
+    ports:
+      - "5432:5432"
