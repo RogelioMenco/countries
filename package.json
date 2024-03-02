@@ -11,6 +11,8 @@
   ],
   "scripts": {
     "dev": "turbo dev",
+    "dev:client": "turbo --filter=@rogelio/client dev",
+    "dev:server": "turbo --filter=@rogelio/server dev",
     "format": "turbo format",
     "lint": "turbo lint"
  },
