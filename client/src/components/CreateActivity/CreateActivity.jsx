@@ -81,7 +81,12 @@ const CreateActivity = () => {
           };
         });
       }
-      return showAlert('Error!', 'Verifica los campos ingresados.', 'OK', 'error');
+      return showAlert(
+        'Error!',
+        'Verifica los campos ingresados.',
+        'OK',
+        'error',
+      );
     }
     showLoading();
     const activity = {

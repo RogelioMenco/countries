@@ -15,7 +15,7 @@ const InitialPage = () => {
           Inicio
         </Link>
         <a
-          href="https://github.com/4ldito/PI-Countries"
+          href="https://github.com/RogelioMenco/countries"
           target="_blank"
           rel="noreferrer"
         >

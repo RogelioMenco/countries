@@ -148,8 +148,8 @@ const PlayQuiz = () => {
             <div className={style.infoContainer}>
               <h3>Juego #1</h3>
               <p>
-                Veras un pais y diferentes opciones, tendras que
-                seleccionar la opcion que creas correcta.
+                Veras un pais y diferentes opciones, tendras que seleccionar la
+                opcion que creas correcta.
               </p>
               <p>Son 5 preguntas en total.</p>
               <h3>Estas listo?</h3>
