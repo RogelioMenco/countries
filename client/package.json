@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "description": "Client proyecto Individual",
   "main": "vite.config.js",
+  "homepage": "https://rogeliomenco.github.io/countries/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --mode build",
+    "build": "vite build --mode=build --base=/countries/",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings=0",
     "format": "prettier --write .",
