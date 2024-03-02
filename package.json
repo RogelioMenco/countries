@@ -14,8 +14,9 @@
     "dev:client": "turbo --filter=@rogelio/client dev",
     "dev:server": "turbo --filter=@rogelio/server dev",
     "format": "turbo format",
-    "lint": "turbo lint"
- },
+    "lint": "turbo lint",
+    "deploy": "turbo --filter @rogelio/client deploy"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^8.57.0",
