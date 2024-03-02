@@ -7,7 +7,7 @@ import { store } from './redux/reducer/store';
 import axios from 'axios';
 
 axios.defaults.baseURL =
-  import.meta.env.REACT_APP_API || 'http://127.0.0.1:4000/';
+  import.meta.env.VITE_API_URL || 'http://127.0.0.1:4000/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
