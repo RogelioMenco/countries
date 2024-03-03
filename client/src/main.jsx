@@ -1,23 +1,23 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { HashRouter } from 'react-router-dom';
+import App from './App';
 import { store } from './redux/reducer/store';
-import axios from 'axios';
 
 axios.defaults.baseURL =
   import.meta.env.VITE_API_URL || 'http://127.0.0.1:4000/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const basePath = import.meta.env.VITE_PUBLIC_URL ?? '/';
 
+// Para Github Pages necesitamos HashRouter de lo contrario podemos usar BrowserRouter
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename={basePath}>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
 );
